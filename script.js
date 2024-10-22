@@ -49,3 +49,11 @@ function checkScroll(scrollOffset) {
         slidesToScroll: 1
     });
 });
+
+let scrollUp = () => {
+    let scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350
+    ? scrollUp.classList.add('show-scroll-btn')
+    : scrollUp.classList.remove('show-scroll-btn')
+}
+window.addEventListener('scroll', scrollUp);
